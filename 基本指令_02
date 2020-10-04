@@ -1,0 +1,20 @@
+安裝
+$sudo apt-get update 套件
+
+升級
+$sudo apt-get -y upgrade 套件
+
+刪除套件
+1.
+$sudo apt-get -y remove 套件
+
+2.完全刪除
+$sudo apt-get -y purge  套件
+
+--------------------------------------------------
+中文字型和中文輸入法
+$sudo apt-get update
+$sudo apt-get -y install ttf-wqy-microhei tty-wqy-zenhei  xfonts-wqy
+
+$sudo apt-get update
+$sudo apt-get -y install scim scim-table-zh
