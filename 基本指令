@@ -1,21 +1,21 @@
-pwd     顯示目前的工作指令(working directory)
+pwd       顯示目前的工作指令(working directory)
 
 ls	    顯示目前工作目錄的檔案和目錄清單
-(list)	 -l 顯示目前工作目錄下檔案和目錄的詳細資訊
-      	 -l + 路徑參數
+(list)    -l 顯示目前工作目錄下檔案和目錄的詳細資訊
+          -l + 路徑參數
          
-cd     	切換目錄(change directory)
-        	~ 切換至目前user的根目錄
-        	.. 回到上一層directory
-         	. 目前directory
+cd        切換目錄(change directory)
+          ~ 切換至目前user的根目錄
+          .. 回到上一層directory
+          . 目前directory
           
-mkdir  	建立新目錄
+mkdir     建立新目錄
 
-rm    	刪除檔案
+rm        刪除檔案
 
-rmdir	  刪除目錄  △需要將directory file都刪除後，才能use rmdir delete 空目錄
+rmdir	    刪除目錄  △需要將directory file都刪除後，才能use rmdir delete 空目錄
 
-cp    	複製檔案
+cp        複製檔案
       1	cp 1(被copy)   2(copy add file name)
       2	cp 1 其他目錄路徑 / 2
       
@@ -23,11 +23,11 @@ mv	    移動檔案或替檔案更名
       1	mv 1(file) 目的地目錄
       2	mv 1(file name)  2 (file name)  替file 更名
       
-find	  檔案系統搜尋指定的檔名 ex: .py 的python程式檔案
+find	    檔案系統搜尋指定的檔名 ex: .py 的python程式檔案
       1	$ find .(目前目錄)   -name(使用檔名範本)       | (副檔名、檔案名稱)  |   
       2	/ 根目錄 (need權限)
       
 df	    顯示檔案系統的磁碟使用狀況
 
-clear	  清空terminal content
+clear	    清空terminal content
 
