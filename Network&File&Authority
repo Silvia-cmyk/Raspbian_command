@@ -1,0 +1,44 @@
+ping        檢查連線狀態
+
+hostname    顯示主機名稱或IP位址
+         -I 查詢IP位址
+         
+ifconfig    顯示網路介面設定
+
+lsusb       顯示連接的USB裝置
+
+lsmod       顯示載入的模組清單(Current Linux kernel)
+
+
+--------------------------------------------------------------------------
+          File    Download
+          
+wget        從Web網站下載檔案
+
+uzip        解壓縮ZIP格式檔案
+
+tar         壓縮和解壓縮TAR格式檔案
+
+--------------------------------------------------------------------------
+          Authority
+          
+sudo        super-user
+安全關機 →→→ $sudo shutdown -h now
+
+who         顯示登入使用者清單
+useradd     新增使用者
+            *搭配sudo執行
+        →→→ $sudo useradd -m -G adm, dialout, cdrom, sudo, audio, video, plugdev, games, users, input, netdev, gpio, i2c, spi 使用者name
+        *** 以上,後不可加空白鍵，不需換行。
+        
+passwd      更改使用者密碼
+
+chmod       更改檔案權限
+          1.u User
+          2.g Group
+          3.o Other Users
+          4.r Read
+          5.w Write
+          6.x Execute
+
+chown       更改檔案的擁有者
