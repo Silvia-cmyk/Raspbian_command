@@ -14,7 +14,7 @@ $sudo apt-get -y purge  套件
 --------------------------------------------------
 中文字型和中文輸入法
 $sudo apt-get update
-$sudo apt-get -y install ttf-wqy-microhei tty-wqy-zenhei  xfonts-wqy
+$sudo apt-get -y install ttf-wqy-microhei ttf-wqy-zenhei  xfonts-wqy
 
 $sudo apt-get update
 $sudo apt-get -y install scim scim-table-zh
