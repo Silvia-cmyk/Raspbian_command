@@ -12,9 +12,6 @@ $sudo apt-get -y remove 套件
 $sudo apt-get -y purge  套件
 
 --------------------------------------------------
-中文字型和中文輸入法
+中文字型
 $sudo apt-get update
 $sudo apt-get -y install ttf-wqy-microhei ttf-wqy-zenhei  xfonts-wqy
-
-$sudo apt-get update
-$sudo apt-get -y install scim scim-table-zh
