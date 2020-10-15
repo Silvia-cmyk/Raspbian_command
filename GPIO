@@ -1,0 +1,49 @@
+--------------------
+'             *  * '  ←這方向對齊
+'             *  * '
+'             *  * '
+'             *  * '
+'             *  * '
+'              X40 '    
+'USB          網路 '
+--------------------
+Raspbian 接腳網址查詢: https://pinout.xyz/
+
+-------------------------------------------------------
+編號分3類
+  1.	左邊單數，右邊雙數
+      Physical Pin or Board Pin
+
+  2.	GPIO 1234….. 以此類推
+      GPIO/BCM Pin (BCM-Broadcom)
+
+  3.	WiringPi
+
+
+2個 3.3V供電
+2個	 5V供電
+8個Ground散落在不一樣的地方
+
+UART {GPIO14(TX)
+  	 {GPIO15(RX)
+
+SPI {SPI0(數字0)	GPIO 7,8,9,10,11
+    {SPI1			    GPIO 16,17,18,19,20,21
+
+I2C {GPIO2(data) 、 GPIO3(clock)
+    {GPIO0 、 GPIO1 →連接至EEPROM
+    
+※※※若{有括號代表有附加功能
+       {沒有則是單純IO
+-------------------------------------------------------
+Boolen is coding
+
+  Digital Pin(數位引腳) {High 1	True	3.3V
+				  {Low 0 False	 0V
+  Arduino {High 5V
+	        {Low 0V
+
+▲所以不可以將樹莓派直接接Arduino。
+一般接線 GND 外接GND (黑)
+        VCC 外接3.3V-5V (紅)
+
