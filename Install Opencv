@@ -33,3 +33,6 @@ cv.__version__
   (4.1.0)
 
 From. https://www.youtube.com/watch?v=ylnjXbcNLJU
+
+※通常在Python import cv2 會出現Error.
+
