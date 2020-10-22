@@ -27,7 +27,26 @@ find	檔案系統搜尋指定的檔名 ex: .py 的python程式檔案
       1	$ find .(目前目錄)   -name(使用檔名範本)       | (副檔名、檔案名稱)  |   
       2	/ 根目錄 (need權限)
       
-df	顯示檔案系統的磁碟使用狀況
+df -h	顯示SD卡使用狀況
 
 clear	清空terminal content
+
+  
+安裝
+$sudo apt-get update 套件
+
+升級
+$sudo apt-get -y upgrade 套件
+
+刪除套件
+1.
+$sudo apt-get -y remove 套件
+
+2.完全刪除
+$sudo apt-get -y purge  套件
+
+--------------------------------------------------
+中文字型
+$sudo apt-get update
+$sudo apt-get -y install ttf-wqy-microhei ttf-wqy-zenhei  xfonts-wqy
 
