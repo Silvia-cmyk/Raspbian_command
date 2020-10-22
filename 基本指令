@@ -45,8 +45,9 @@ $sudo apt-get -y remove 套件
 2.完全刪除
 $sudo apt-get -y purge  套件
 
---------------------------------------------------
+------------------------------------------------------------------------------
 中文字型
 $sudo apt-get update
 $sudo apt-get -y install ttf-wqy-microhei ttf-wqy-zenhei  xfonts-wqy
-
+------------------------------------------------------------------------------
+vcgencmd measure_temp    查看溫度
