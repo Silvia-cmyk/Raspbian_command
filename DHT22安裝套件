@@ -1,0 +1,12 @@
+sudo apt-get update
+sudo apt-get -y dist-upgrade
+sudo apt-get clean
+sudo apt-get install python3-dev python3-pip
+sudo python3 -m pip install --upgrade pip setuptools wheel
+sudo apt install libffi-dev libssl-dev
+sudo pip3 install adafruit-circuitpython-dht
+
+GPIO install（Error：Problem using libgpiod）
+----------------------------------------------------------
+sudo apt-get install gpiod
+sudo apt-get install libgpiod-dev
