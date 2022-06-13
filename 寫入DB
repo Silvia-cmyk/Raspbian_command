@@ -1,0 +1,38 @@
+import  datetime
+import  time
+import  board
+import  adafruit_dht
+import  pymysql
+
+while True:
+        try:
+                #data reader board
+                dht_22 = adafruit_dht.DHT22(board.D22,use_pulseio=False)
+
+                #open database connnetion
+                db = pymysql.connect(host="",user="",password="",port=3306,charset="utf8",database="DHT22")
+
+                #read data
+                Name = '測試'
+                temperature = dht_22.temperature
+                humidity = dht_22.humidity
+                date = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+                #prepare a  cursor object using cursor() method
+                cursor = db.cursor()
+
+                #write data
+                sql = "INSERT INTO dht22_grafana(Name, Temperature, Humidity, Time) VALUES (%s, %s, %s, %s)"
+                val = (Name, temperature, humidity,date)
+                cursor.execute(sql, val)
+                #print data
+                print(temperature)
+                print(humidity)
+                print(date)
+                #disconnect from server
+                db.commit()
+                db.close()
+                print(cursor.rowcount,"record inserted.")
+                time.sleep(10)
+        except KeyboardInterrupt and RuntimeError:
+                pass
